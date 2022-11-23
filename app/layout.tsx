@@ -1,4 +1,5 @@
 import "@op-ent/unstyled-ui-theme/dist/colors.css";
+import "./uuit-components.css";
 import { Space_Grotesk } from "@next/font/google";
 import clsx from "clsx";
 import "~/styles/globals.css";
@@ -15,7 +16,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "dark antialiased bg-neutral-1 text-neutral-12",
+        "antialiased bg-neutral-1 text-neutral-12",
         spaceGrotesk.className
       )}
     >

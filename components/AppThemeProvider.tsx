@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import { ThemeProvider } from "@op-ent/unstyled-ui";
-import { theme } from "~/lib/theme";
+import { ConfigProvider } from "@op-ent/unstyled-ui";
+import { config } from "~/lib/config";
 
 export default function AppThemeProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <ThemeProvider value={theme}>{children}</ThemeProvider>;
+  return <ConfigProvider config={config}>{children}</ConfigProvider>;
 }

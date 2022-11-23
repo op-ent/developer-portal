@@ -1,0 +1,15 @@
+.uui-button[data-part="root"] {
+  @apply inline-flex items-center border border-transparent rounded-md focus:outline-none focus:ring transition-colors focus:z-10;
+}
+
+.uui-button[data-size="md"] {
+  @apply px-3 py-2 text-sm leading-4;
+}
+
+.uui-button[data-variant="solid"][data-color="primary"] {
+  @apply bg-primary-9 hover:bg-primary-10 focus:ring-primary-7 text-white shadow-sm;
+}
+
+.uui-button[data-variant="outline"][data-color="primary"] {
+  @apply bg-primary-1 border-primary-7 hover:border-primary-8 hover:bg-primary-2 focus:ring-primary-7 text-primary-11 shadow-sm;
+}
